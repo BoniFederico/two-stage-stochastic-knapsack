@@ -77,7 +77,7 @@ The class GurobiSolver is a Python class that extend the class "Solver". The cla
 - EEVS_obj_value: return the value of the EEVS solution*
 - __cut_counter: method that count the number of cutting planes of the Branch & Cut alghoritm.
 
-(*) <i> For further informations check <a href="https://books.google.it/books?id=Vp0Bp8kjPxUC&lr=&hl=it&source=gbs_navlinks_s">Introduction to stochastic programming</a>, page 44.<i>
+(*) <i> For further informations check <a href="https://books.google.it/books?id=Vp0Bp8kjPxUC&lr=&hl=it&source=gbs_navlinks_s">Introduction to stochastic programming</a>, page 44.</i>
 
 #### 2.1.2 class XpressSolver
 
