@@ -1,1 +1,1 @@
-Gurobi 9.5.2
+gurobipy 9.5.2
