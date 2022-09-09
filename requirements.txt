@@ -1,2 +1,2 @@
-gurobipy 9.5.2
-numpy 1.23.2
+gurobipy==9.5.2
+
