@@ -1,2 +1,7 @@
-gurobipy==9.5.2
+gurobipy
+matplotlib
+numpy
+pandas
+six
+
 
