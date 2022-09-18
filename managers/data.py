@@ -35,7 +35,7 @@ class Data:
 
   def __init__(self,N, D, S,data_range_R=1000, w_p=5000,v_p=5000,alpha=0.8,w_b=1,v_b=1,N_p=None,correlation=None):
       self.N, self.D,self.S= (N,D,S)
-      self.data_range_R=1000
+      self.data_range_R=data_range_R
       self.w_p,self.v_p,self.alpha,self.w_b,self.v_b= (w_p,v_p,alpha,w_b,v_b)
       self.__instance_generator(N,D,S,data_range_R,N_p if N_p is not None else N,self.Correlation.uncorrelated if correlation is None else correlation)
  
@@ -51,7 +51,7 @@ class Data:
     
   def __instance_generator(self,N,D,S,data_range_R,N_p,correlation):
     self.w,self.r=self.Correlation.get_distributions(correlation,data_range_R,N)
-    self.v=np.array(np.round((np.random.rand(N)*(2-0.5)+0.5)*self.w),dtype="int")
+    self.v=np.array(np.round((np.random.rand(N)*(5-0.2)+0.2)*self.w),dtype="int")
     self.t=np.array(np.ceil(np.random.rand(N)*10),dtype="int")
     self.m=np.array(np.round((np.random.rand(N)*(0.9-0.5)+0.5)*np.minimum(self.w,self.v)),dtype="int")
     self.N_p=sorted(random.sample(list(range(N)),min(N,N_p))) 
