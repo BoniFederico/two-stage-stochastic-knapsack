@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 gurobipy==9.5.2
 xpress==8.14.2
 matplotlib==3.5.2
 numpy==1.22.3
 pandas==1.4.2
 six==1.16.0
-=======
 gurobipy
 matplotlib
 numpy
 pandas
 six
-
-
->>>>>>> b04f99877999b5b5995a864d1c7bd41dc2d133ba
